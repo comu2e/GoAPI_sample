@@ -12,7 +12,7 @@ var DbEngine *xorm.Engine
 
 func init()  {
 	driverName := "mysql"
-	DsName := "root:password@/mydb"
+	DsName := "root:@/book"
 	err := errors.New("")
 	DbEngine, err = xorm.NewEngine(driverName,DsName)
 	if err != nil && err.Error() != ""{
